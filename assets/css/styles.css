@@ -192,7 +192,6 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
-  margin-top: 200px;
 }
 
 .home__data {
@@ -347,25 +346,7 @@ img {
 }
 
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
 
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
-}
 
 /* ===== FOOTER =====*/
 .footer {
@@ -381,15 +362,28 @@ img {
   margin-bottom: var(--mb-4);
 }
 
-.footer__social {
+.contact__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: var(--mb-4);
 }
 
-.footer__icon {
+.contact__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: #060505; /* Icon color */
   margin: 0 var(--mb-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.contact__icon span {
+  margin-top: 0.5rem; /* Adjust the spacing as needed */
+  color: #0066ff; /* Updated text color (blue shade) */
+  margin-top: 0.5rem; /* Add margin between icon and text */
+}
+
 
 .footer__copy {
   font-size: var(--smaller-font-size);
@@ -481,10 +475,9 @@ img {
   }
   .home {
     padding: 8rem 0 2rem;
-    margin-top: 250px;
   }
   .home__img {
-    width: 400px;
+    width: 350px;
     bottom: 10%;
   }
   .about__container {
